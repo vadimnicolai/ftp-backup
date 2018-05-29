@@ -45,9 +45,15 @@ ftp -n -i $SERVER <<EOF
 EOF
 }
 
+cleanBackup() {
+  rm -f $GIVENNAME-$DATETIME.tar.gz
+  echo 'Local Backup Removed'
+}
+
 if [ ! -z "$GIVENNAME" ]; then
     if tarandzip; then
         uploadToFtp
+        cleanBackup
     else
         showhelp
     fi
