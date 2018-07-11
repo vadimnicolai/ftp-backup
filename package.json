@@ -1,0 +1,25 @@
+{
+  "name": "ftp-backup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimnicolai/ftp-backup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadimnicolai/ftp-backup/issues"
+  },
+  "homepage": "https://github.com/vadimnicolai/ftp-backup#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "ftp": "^0.3.10",
+    "moment": "^2.22.2",
+    "tar": "^4.4.4"
+  }
+}
